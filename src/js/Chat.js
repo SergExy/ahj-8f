@@ -157,7 +157,7 @@ export default class Chat {
       const registry = await this.api.registry(JSON.stringify(data));
       if (registry.status === 'error') {
         const hint = formGroupEl.querySelector('.form__hint');
-        if (!hint) return;
+        if (hint) return;
 
         const hintEl = createElement({
           name: 'div',
