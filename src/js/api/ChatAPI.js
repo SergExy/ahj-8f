@@ -4,7 +4,7 @@ import createRequest from './createRequest';
 export default class ChatAPI extends Entity {
   constructor() {
     super();
-    this.host = 'http://localhost:3000';
+    this.host = 'https://ahj-8.onrender.com';
   }
 
   async registry(data) {
