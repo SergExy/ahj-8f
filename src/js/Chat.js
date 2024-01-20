@@ -178,7 +178,7 @@ export default class Chat {
   }
 
   subscribeOnEvents() {
-    this.ws = new WebSocket('ws://localhost:3000/connection');
+    this.ws = new WebSocket('ws://ahj-8.onrender.com/connection');
     this.ws.addEventListener('open', this.onOpen);
     this.ws.addEventListener('close', this.onClose);
     this.ws.addEventListener('error', this.onError);
